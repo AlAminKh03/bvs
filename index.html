@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BVS preview</title>
+    <style>
+        @keyframes sliding {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 800px;
+            }
+
+
+        }
+
+        @keyframes supes {
+            from {
+                top: 0px;
+            }
+
+            to {
+                top: 305px;
+            }
+        }
+
+        .bvs {
+            width: 1000px;
+            height: 400px;
+
+        }
+
+        .bat-mobile {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            top: 280px;
+            animation: sliding 2s ease-in 0.2s infinite alternate;
+            animation-play-state: running;
+        }
+
+        .superman {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            top: 260px;
+            left: 750px;
+            animation: supes 2s ease-in 0.2s infinite alternate;
+            animation-play-state: running;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bvs">
+        <img class="bat-mobile" src="images/illustratros/batmobile.png" alt="">
+        <img class="superman" src="images/illustratros/superman1.png" alt="">
+    </div>
+</body>
+
+</html>
